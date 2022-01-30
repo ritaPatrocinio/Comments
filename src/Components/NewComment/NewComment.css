@@ -1,0 +1,48 @@
+
+
+  .BorderN {
+    width: 58%;
+    margin: 1% auto;
+    padding: 1%;
+    background-color: thistle !important;
+    border: 1px solid ;
+    border-radius: 20px;
+    display: flex;
+  }
+
+
+  .BorderReply {
+    width: 96%;
+    padding: 2%;
+    background-color: thistle !important;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 2%;
+  }
+
+  .SendBut {
+    margin: 0 0% 0 2%;
+    padding: 2px 2%;
+    height: 35px;
+    border-radius: 7px;
+    background: darkblue;
+    color: white;
+    font-size: 60%;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  textarea {
+    border-radius: 6px;
+    background: whitesmoke;
+    padding: 1%;
+    width: 85%;
+    float: left;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+ 
