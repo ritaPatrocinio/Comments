@@ -1,12 +1,11 @@
 import React from "react";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import './NewComment.css';
 
 
-export function NewComment({currentUser, newThread, setCommentList, replyCom, setClickedReply, setCommentReplies}) {
+export function NewComment({currentUser, newThread, setCommentList, replyCom, setClickedReply, setCommentReplies, id, setId}) {
     const [newCom, setNewCom] = useState('');
-    const [id, setId] = useState(5)
-
+    
     const handleChange = e => {
         setNewCom(e.target.value)
     }
@@ -36,22 +35,16 @@ export function NewComment({currentUser, newThread, setCommentList, replyCom, se
             "user": currentUser,
             "replies": []
           }
-        //   const replyID =  replyCom.replies ?  replyCom.id : replyCom.replyingToId;
-
           setCommentReplies((prev) => { setClickedReply(false); return [...prev, newC]});
-            // const replyC = prev.filter(c => c.id === replyID);
-            
-            // return prev.push(newC); 
-         
     };
         setNewCom('');
-        setId(id +1);
+        setId( (prev) => prev +1);
     }
 
     const render = () =>{
         return (
             <div className="flex">
-                {/* <img src={comment.user.image.png} alt="img"></img>  */}
+                <img src={require('../../' + currentUser.image.png.replace('./', ''))} alt="img"></img>
                <textarea onChange={handleChange} value={newCom} placeholder="write comment" name="w3review" rows="4" cols="110"></textarea>
                <button className="SendBut" onClick={Send}>Send</button>
             </div>
