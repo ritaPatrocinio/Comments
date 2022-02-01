@@ -12,9 +12,6 @@ const [isDelete, setIsDelete] = useState([]);
 
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
       <br></br>
       <CommentList isDelete={isDelete} setIsDelete={setIsDelete} setId={setId} id={id} reply={false} commentList={commentList} 
       setCommentList={setCommentList} currentUser={currentUser} ></CommentList>

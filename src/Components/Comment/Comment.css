@@ -2,6 +2,8 @@
     width: 60%;
     margin: auto;
   }
+
+
   
   .CommentR {
     width: 100%;
@@ -128,5 +130,39 @@
   font-size: 95%;
 }
 
+  @media only screen and (max-width: 1150px) {
+    .Comment {
+      width: 80%;
+    }
+    .styleDate {
+      font-size: 55%;
+      position: absolute;
+      margin-left: 66px;
+      margin-top: 37px;
+  }
+  .ActionsDiv {
+    right: 13%;
+}
+  }
 
+  @media only screen and (max-width: 768px) {
+    .Comment {
+      width: 90%;
+    }
+    .Like {
+    width: 30px;
+  }
+  .Reply {
+    font-size: 70%;
+    font-weight: 600;
+  }
+
+  .styleDate {
+    font-size: 55%;
+    position: absolute;
+    margin-left: 66px;
+    margin-top: 37px;
+}
+
+  }
 
