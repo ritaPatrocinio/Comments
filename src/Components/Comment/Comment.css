@@ -124,6 +124,7 @@
     border: none;
     font-size: 90%;
     color: #0a0f2a;
+    padding: 4% 38%;
 }
 
 .UnLikesBut {
@@ -144,6 +145,19 @@
   .ActionsDiv {
     right: 13%;
 }
+  }
+  @media only screen and (max-width: 450px) {
+    .Comment {
+      width: 96%;
+    }
+    .ReplyDiv {
+      margin-left: 5px;
+  }
+  .Reply {
+    font-size: 70%;
+    font-weight: 600;
+    padding: 1px 4px 0 3px !important;
+  }
   }
 
   @media only screen and (max-width: 768px) {
@@ -169,12 +183,4 @@
   }
   }
 
-  @media only screen and (max-width: 450px) {
-    .Comment {
-      width: 96%;
-    }
 
-    .ReplyDiv {
-      margin-left: 6px;
-  }
-  }
