@@ -24,9 +24,7 @@ button {
 
 img {
   max-width: 50px;
-  min-width: 30px;
   display: inline;
   max-height: 50px;
-  min-height: 30px;
   margin: 5px 15px 0px 0px;
 }
