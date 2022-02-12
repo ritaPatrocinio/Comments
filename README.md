@@ -1,3 +1,3 @@
 Interactive comments section (React project)
 
-Live version: https://plausible-comments.surge.sh/
+[Live version here](https://plausible-comments.surge.sh/)
